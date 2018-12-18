@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>weather</title>
+  </head>
+  <body>
+
+  	  <title>Formulaire</title>
+
+<h1>Inscription </h1>   
+
+
+<br>
+<br>
+
+
+<div>
+  <label>Name</label>
+   <p>{{ message1 }}</p>
+  <input v-model="message1"placeholder="Enter your name">
+
+<br>
+<br>
+  <label>Surname</label>
+   <p>{{ message2 }}</p>
+  <input v-model="message2" placeholder="Enter your Surname" >
+
+</div>
+
+<br>
+<br>
+ <div>
+ 
+<legend>My current users </legend>
+<br>
+<textarea v-model="userslist" placeholder="All of my users " >
+
+ </textarea>
+  
+  
+ <br>
+ <br>
+ </div>
+ 
+   
+	
+	
+	<div id='example-3' >
+	<br>
+	
+	<title> Gender</title>
+  <input type="checkbox" id="homme" value="Homme" v-model="checkedNames">
+  <label for="homme">Homme</label>
+  <input type="checkbox" id="femme" value="Femme" v-model="checkedNames">
+  <label for="femme">Femme</label>
+
+
+<br>
+ <br>
+  <span>Checked names: {{ checkedNames }}</span>
+</div>
+
+<br>
+<br>
+
+            <button v-on:click="show=!show" > SignUp </button>
+<div v-show="show">
+<span > {{ message1 }}<span/>
+<span > {{ message2 }}<span/>
+
+</div>
+ </div>
+    <div id="app"></div>
+    <script src="/dist/build.js"></script>
+  </body>
+</html>

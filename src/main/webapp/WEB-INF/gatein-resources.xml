@@ -1,0 +1,24 @@
+<gatein-resources xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://www.exoplatform.org/xml/ns/gatein_resources_1_4 http://www.exoplatform.org/xml/ns/gatein_resources_1_4"
+                  xmlns="http://www.exoplatform.org/xml/ns/gatein_resources_1_4">
+
+    <portlet>
+        <name>WeatherPortlet</name>
+        <module>
+            <depends>
+                <module>weather</module>
+            </depends>
+
+        </module>
+    </portlet>
+    <module>
+        <name>weather</name>
+        <script>
+            <minify>false</minify>
+            <path>/js/weather.bundle.js</path>
+        </script>
+        <depends>
+            <module>vue</module>
+        </depends>
+    </module>
+</gatein-resources>

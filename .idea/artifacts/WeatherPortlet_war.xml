@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="WeatherPortlet:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>WeatherPortlet</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="WeatherPortlet.war">
+      <element id="artifact" artifact-name="WeatherPortlet:war exploded" />
+    </root>
+  </artifact>
+</component>
